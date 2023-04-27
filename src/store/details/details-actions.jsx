@@ -1,6 +1,7 @@
 export const SET_LOADING = '@@details/SET_LOADING';
 export const SET_ERROR = '@@details/SET_ERROR';
 export const SET_COUNTRY = '@@details/SET_COUNTRY';
+export const CLEAR_DETAILS = '@@details/CLEAR_DETAILS';
 
 export const setLoading = () => ({
 	type: SET_LOADING,
@@ -14,6 +15,10 @@ export const setError = (err) => ({
 export const setCountry = (countries) => ({
 	type: SET_COUNTRY,
 	payload: countries,
+});
+
+export const clearDetails = () => ({
+	type: CLEAR_DETAILS,
 });
 
 export const loadCountryByName =
